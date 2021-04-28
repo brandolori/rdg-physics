@@ -1,4 +1,4 @@
-import PlayerControl from "./player_control";
+import PlayerControl from "./PlayerControl";
 
 const { ccclass, property } = cc._decorator;
 

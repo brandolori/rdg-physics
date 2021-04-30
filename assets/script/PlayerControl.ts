@@ -107,6 +107,8 @@ export default class PlayerControl extends cc.Component {
             this.Rigid_Body.applyForceToCenter(cc.v2(this.Direction * this.Walk_Force, 0), true);
         }
 
+        this.node.scaleX = this.Direction >= 0 ? .5 : -.5
+
     }
 
     Throw_Bomb() {

@@ -3,16 +3,12 @@ const { ccclass, property } = cc._decorator;
 @ccclass
 export default class PlayerControl extends cc.Component {
 
-
-    @property(cc.Prefab)
-    Bomb_Prefab: cc.Prefab = null
     Rigid_Body: cc.RigidBody;
     Direction: number;
     On_The_Ground: boolean;
     Velocity_Max_X: number;
     Walk_Force: number;
     Jump_Force: number;
-
 
     onLoad() {
 
@@ -53,11 +49,6 @@ export default class PlayerControl extends cc.Component {
             case cc.macro.KEY.up:
                 this.jump()
                 break;
-
-            case cc.macro.KEY.space:
-                this.Throw_Bomb();
-                break;
-
         }
 
     }
@@ -108,21 +99,6 @@ export default class PlayerControl extends cc.Component {
         }
 
         this.node.scaleX = this.Direction >= 0 ? .5 : -.5
-
-    }
-
-    Throw_Bomb() {
-
-        let bomb = cc.instantiate(this.Bomb_Prefab);
-
-        bomb.parent = this.node.parent;
-        let pos = this.node.getPosition();
-        pos.x += 70;
-        bomb.setPosition(pos);
-
-        let rb = bomb.getComponent(cc.RigidBody);
-
-        rb.applyForceToCenter(cc.v2(140000, 200000), true);
 
     }
 

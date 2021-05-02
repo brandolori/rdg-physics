@@ -5,6 +5,8 @@ const { ccclass, property } = cc._decorator;
 @ccclass
 export default class Game extends cc.Component {
 
+    static instance: Game
+
     state: "active" | "suspended" = "active"
     physicsManager: cc.PhysicsManager
 
@@ -22,6 +24,8 @@ export default class Game extends cc.Component {
 
 
     onLoad() {
+        // singleton 😯
+        Game.instance = this
         this.physicsManager = cc.director.getPhysicsManager()
         this.physicsManager.enabled = true;
         this.physicsManager.gravity = cc.v2(0, -2000);

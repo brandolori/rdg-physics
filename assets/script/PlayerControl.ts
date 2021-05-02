@@ -1,35 +1,30 @@
+import { Events, onEvent } from "./EventSystem";
+
 const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class PlayerControl extends cc.Component {
 
-    Rigid_Body: cc.RigidBody;
-    Direction: number;
-    On_The_Ground: boolean;
-    Velocity_Max_X: number;
-    Walk_Force: number;
-    Jump_Force: number;
+    rigidBody: cc.RigidBody;
+    direction = 0;
+    isGrounded = false;
+    velocityMax = 400;
+    walkForce = 15000;
+    jumpForce = 500000;
 
     onLoad() {
-
-        // window.test_comp = this;
-
-        // this.node.player_control = this;
+        onEvent(Events.PLAYER_BOUNCE, this.onBounce, this)
 
         // Rigid Body
-        this.Rigid_Body = this.node.getComponent(cc.RigidBody);
+        this.rigidBody = this.node.getComponent(cc.RigidBody);
 
         // Key events
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyPressed, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyReleased, this);
+    }
 
-
-        this.Direction = 0;
-        this.On_The_Ground = false;
-        this.Velocity_Max_X = 400;
-        this.Walk_Force = 15000;
-        this.Jump_Force = 500000;
-
+    onBounce() {
+        this.rigidBody.applyForceToCenter(cc.v2(0, this.jumpForce), true);
     }
 
     onKeyPressed(event) {
@@ -68,37 +63,37 @@ export default class PlayerControl extends cc.Component {
     }
 
     jump() {
-        if (this.On_The_Ground) {
-            this.Rigid_Body.applyForceToCenter(cc.v2(0, this.Jump_Force), true);
-            this.On_The_Ground = false;
+        if (this.isGrounded) {
+            this.rigidBody.applyForceToCenter(cc.v2(0, this.jumpForce), true);
+            this.isGrounded = false;
         }
     }
 
     moveLeft() {
-        this.Direction = -1;
+        this.direction = -1;
     }
 
     moveRight() {
-        this.Direction = 1;
+        this.direction = 1;
     }
 
     stopLRMovement() {
-        this.Direction = 0;
+        this.direction = 0;
     }
 
     onBeginContact(contact, selfCollider, otherCollider) {
         if (selfCollider.tag === 2) {
-            this.On_The_Ground = true;
+            this.isGrounded = true;
         }
     }
 
     update(dt) {
 
-        if ((this.Direction > 0 && this.Rigid_Body.linearVelocity.x < this.Velocity_Max_X) || (this.Direction < 0 && this.Rigid_Body.linearVelocity.x > -this.Velocity_Max_X)) {
-            this.Rigid_Body.applyForceToCenter(cc.v2(this.Direction * this.Walk_Force, 0), true);
+        if ((this.direction > 0 && this.rigidBody.linearVelocity.x < this.velocityMax) || (this.direction < 0 && this.rigidBody.linearVelocity.x > -this.velocityMax)) {
+            this.rigidBody.applyForceToCenter(cc.v2(this.direction * this.walkForce, 0), true);
         }
 
-        this.node.scaleX = this.Direction >= 0 ? .5 : -.5
+        this.node.scaleX = this.direction >= 0 ? .5 : -.5
 
     }
 

@@ -11,6 +11,7 @@ const Events = {
     UI_POPDOWN: "ui-popdown",
     GAME_SUSPEND: "game-suspend",
     GAME_RESUME: "game-resume",
+    PLAYER_BOUNCE: "player-bounce",
 
 }
 

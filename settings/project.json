@@ -1,15 +1,22 @@
 {
   "group-list": [
-    "default",
-    "coin"
+    "player",
+    "coin",
+    "obstacles"
   ],
   "collision-matrix": [
     [
+      true,
       true,
       true
     ],
     [
       true,
+      false
+    ],
+    [
+      true,
+      false,
       false
     ]
   ],

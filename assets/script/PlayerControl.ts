@@ -93,6 +93,12 @@ export default class PlayerControl extends cc.Component {
         }
     }
 
+    onEndContact(contact, selfCollider, otherCollider: cc.PhysicsCollider) {
+        if (selfCollider.tag === 2 && otherCollider.node.group == "ground") {
+            this.isGrounded = false;
+        }
+    }
+
     update(dt) {
 
         if ((this.direction > 0 && this.rigidBody.linearVelocity.x < this.velocityMax) || (this.direction < 0 && this.rigidBody.linearVelocity.x > -this.velocityMax)) {

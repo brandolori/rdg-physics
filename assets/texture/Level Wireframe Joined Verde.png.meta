@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "2075d5e3-c495-482c-bb1c-923a64a1c0a7",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "point",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 200,
+  "height": 20,
+  "platformSettings": {},
+  "subMetas": {
+    "Level Wireframe Joined Verde": {
+      "ver": "1.0.4",
+      "uuid": "6dd8fa93-aa7e-4cef-a2b2-b7246f08798e",
+      "rawTextureUuid": "2075d5e3-c495-482c-bb1c-923a64a1c0a7",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 200,
+      "height": 19,
+      "rawWidth": 200,
+      "rawHeight": 20,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

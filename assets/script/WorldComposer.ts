@@ -17,9 +17,6 @@ export default class NewClass extends cc.Component {
         const collisionObjects = this.worldMap.getObjectGroup(this.collisionGroupName).getObjects()
 
         collisionObjects.forEach(obj => {
-            console.log("oggetto")
-            console.log(obj)
-            
             const node = cc.instantiate(this.collisionPrefab)
             node.height = obj.height
             node.width = obj.width

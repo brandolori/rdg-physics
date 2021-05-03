@@ -204,7 +204,7 @@
     "_enabled": true,
     "velocityMax": 400,
     "walkForce": 15000,
-    "jumpForce": 700000,
+    "jumpForce": 800000,
     "_id": ""
   },
   {

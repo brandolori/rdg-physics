@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "af987e11-d4bb-4844-a183-a5929e648409",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "point",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 200,
+  "height": 20,
+  "platformSettings": {},
+  "subMetas": {
+    "livello-1": {
+      "ver": "1.0.4",
+      "uuid": "80a770ce-87c0-49b3-b74c-060a2a608074",
+      "rawTextureUuid": "af987e11-d4bb-4844-a183-a5929e648409",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -1,
+      "trimX": 0,
+      "trimY": 2,
+      "width": 200,
+      "height": 18,
+      "rawWidth": 200,
+      "rawHeight": 20,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

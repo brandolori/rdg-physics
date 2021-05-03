@@ -11,13 +11,16 @@ export default class JumpOnTop extends cc.Component {
     @property(cc.Node)
     toDestroy: cc.Node = null
 
-    onBeginContact() {
+    onBeginContact(contact, selfCollider, otherCollider: cc.PhysicsCollider) {
+        if (otherCollider.tag != 2)
+            return
+
         emitEvent(Events.PLAYER_BOUNCE)
         this.deathCollider.enabled = false
 
         // TODO
         this.toDestroy.destroy()
-        
+
         this.node.active = false
     }
 }

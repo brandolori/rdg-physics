@@ -5,12 +5,18 @@ const { ccclass, property } = cc._decorator;
 @ccclass
 export default class PlayerControl extends cc.Component {
 
-    rigidBody: cc.RigidBody;
-    direction = 0;
-    isGrounded = false;
-    velocityMax = 400;
-    walkForce = 15000;
-    jumpForce = 500000;
+    @property
+    velocityMax = 400
+
+    @property
+    walkForce = 15000
+
+    @property
+    jumpForce = 500000
+
+    rigidBody: cc.RigidBody
+    direction = 0
+    isGrounded = false
 
     onLoad() {
         onEvent(Events.PLAYER_BOUNCE, this.onBounce, this)
@@ -81,8 +87,8 @@ export default class PlayerControl extends cc.Component {
         this.direction = 0;
     }
 
-    onBeginContact(contact, selfCollider, otherCollider) {
-        if (selfCollider.tag === 2) {
+    onBeginContact(contact, selfCollider, otherCollider: cc.PhysicsCollider) {
+        if (selfCollider.tag === 2 && otherCollider.node.group == "ground") {
             this.isGrounded = true;
         }
     }
@@ -93,7 +99,7 @@ export default class PlayerControl extends cc.Component {
             this.rigidBody.applyForceToCenter(cc.v2(this.direction * this.walkForce, 0), true);
         }
 
-        this.node.scaleX = this.direction >= 0 ? .5 : -.5
+        this.node.scaleX = this.direction >= 0 ? 1 : -1
 
     }
 

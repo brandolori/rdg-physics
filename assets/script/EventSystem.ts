@@ -4,15 +4,17 @@ const onEvent = (event: string, cb: any, target?: any) => cc.Canvas.instance.nod
 
 const Events = {
     GAME_START: "game-start",
+
     COIN: "coin",
     DEATH: "death",
+    PLAYER_BOUNCE: "player-bounce",
     PLAYER_HIT: "player-hit",
+    DEATH_BARRIER: "death-barrier",
+
     UI_POPUP: "ui-popup",
     UI_POPDOWN: "ui-popdown",
     GAME_SUSPEND: "game-suspend",
     GAME_RESUME: "game-resume",
-    PLAYER_BOUNCE: "player-bounce",
-
 }
 
 export {

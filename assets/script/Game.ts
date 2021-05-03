@@ -34,15 +34,20 @@ export default class Game extends cc.Component {
         this.physicsManager.enabledAccumulator = true;
         cc.PhysicsManager.FIXED_TIME_STEP = 1 / 60;
 
-        cc.director.getPhysicsManager().debugDrawFlags = cc.PhysicsManager.DrawBits.e_aabbBit |
-            cc.PhysicsManager.DrawBits.e_jointBit |
-            cc.PhysicsManager.DrawBits.e_shapeBit
-            ;
+        // cc.director.getPhysicsManager().debugDrawFlags = cc.PhysicsManager.DrawBits.e_aabbBit |
+        //     cc.PhysicsManager.DrawBits.e_jointBit |
+        //     cc.PhysicsManager.DrawBits.e_shapeBit
 
         onEvent(Events.PLAYER_HIT, this.onPlayerHit, this)
+        onEvent(Events.DEATH_BARRIER, this.onDeathBarrier, this)
     }
 
     onPlayerHit() {
+        this.suspendGame()
+        emitEvent(Events.DEATH)
+    }
+
+    onDeathBarrier() {
         this.suspendGame()
         emitEvent(Events.DEATH)
     }

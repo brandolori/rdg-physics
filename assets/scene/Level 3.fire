@@ -3365,25 +3365,6 @@
     "_id": "f0L0zpRgdAeore4lVlKp2D"
   },
   {
-    "__type__": "4cf85Gf+YdEuaByETvNn78e",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 7
-    },
-    "_enabled": true,
-    "Player_Node": {
-      "__id__": 15
-    },
-    "BG_Layer_Back": {
-      "__id__": 9
-    },
-    "BG_Layer_Mid": {
-      "__id__": 12
-    },
-    "_id": "efeAkzwYVDjJzK/WO5JtHK"
-  },
-  {
     "__type__": "cc.Widget",
     "_name": "",
     "_objFlags": 0,
@@ -3409,6 +3390,25 @@
     "_originalWidth": 1280,
     "_originalHeight": 720,
     "_id": "88kRDdCmxHZJKWZ8EOoTaq"
+  },
+  {
+    "__type__": "0f82aHJF0VC1qbLB1rGRn2w",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 7
+    },
+    "_enabled": true,
+    "playerNode": {
+      "__id__": 15
+    },
+    "backBGLayer": {
+      "__id__": 9
+    },
+    "midBGLayer": {
+      "__id__": 12
+    },
+    "_id": "566AtfH7ZGJ7uVo8zbiVLg"
   },
   {
     "__type__": "cc.Node",

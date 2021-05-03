@@ -1,3 +1,5 @@
+import PlayerControl from "./PlayerControl";
+
 const { ccclass, property } = cc._decorator;
 
 @ccclass
@@ -23,7 +25,9 @@ export default class CameraControls extends cc.Component {
 
     update(dt: number) {
 
-        let target_position = this.playerNode.getPosition();
+        const directionOffset = this.playerNode.getComponent(cc.RigidBody).linearVelocity.x * .1
+        let target_position = this.playerNode.getPosition().add(cc.Vec2.RIGHT.mul(directionOffset))
+
         target_position.y = cc.misc.clampf(target_position.y, this.minHeight, this.maxHeight);
 
         let current_position = this.node.getPosition();

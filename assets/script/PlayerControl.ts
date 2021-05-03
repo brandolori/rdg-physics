@@ -99,7 +99,7 @@ export default class PlayerControl extends cc.Component {
             this.rigidBody.applyForceToCenter(cc.v2(this.direction * this.walkForce, 0), true);
         }
 
-        this.node.scaleX = this.direction >= 0 ? 1 : -1
+        this.node.scaleX = this.direction >= 0 ? -1 : 1
 
     }
 

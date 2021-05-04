@@ -1,4 +1,5 @@
 import { Events, onEvent } from "./EventSystem";
+import PlayerFeet from "./PlayerFeet";
 
 const { ccclass, property } = cc._decorator;
 
@@ -13,6 +14,9 @@ export default class PlayerControl extends cc.Component {
 
     @property
     jumpForce = 500000
+
+    @property(PlayerFeet)
+    feet: PlayerFeet = null
 
     rigidBody: cc.RigidBody
     direction = 0
@@ -69,9 +73,9 @@ export default class PlayerControl extends cc.Component {
     }
 
     jump() {
-        if (this.isGrounded) {
+        if (this.feet.isGrounded) {
             this.rigidBody.applyForceToCenter(cc.v2(0, this.jumpForce), true);
-            this.isGrounded = false;
+            this.feet.isGrounded = false;
         }
     }
 
@@ -85,18 +89,6 @@ export default class PlayerControl extends cc.Component {
 
     stopLRMovement() {
         this.direction = 0;
-    }
-
-    onBeginContact(contact, selfCollider, otherCollider: cc.PhysicsCollider) {
-        if (selfCollider.tag === 2 && otherCollider.node.group == "ground") {
-            this.isGrounded = true;
-        }
-    }
-
-    onEndContact(contact, selfCollider, otherCollider: cc.PhysicsCollider) {
-        if (selfCollider.tag === 2 && otherCollider.node.group == "ground") {
-            this.isGrounded = false;
-        }
     }
 
     update(dt) {

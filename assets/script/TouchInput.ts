@@ -14,10 +14,11 @@ export default class TouchInput extends cc.Component {
     @property(cc.Node)
     jumpButton: cc.Node = null
 
-    @property(PlayerControl)
-    player: PlayerControl = null
+    player: PlayerControl
 
     onLoad() {
+        this.player = cc.Canvas.instance.getComponentInChildren(PlayerControl)
+
         // start
         this.leftButton.on(cc.Node.EventType.TOUCH_START, () => this.player.moveLeft())
         this.rightButton.on(cc.Node.EventType.TOUCH_START, () => this.player.moveRight())

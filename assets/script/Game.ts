@@ -7,6 +7,9 @@ export default class Game extends cc.Component {
 
     static instance: Game
 
+    @property
+    drawDebug = false
+
     state: "active" | "suspended" = "active"
     physicsManager: cc.PhysicsManager
 
@@ -34,9 +37,11 @@ export default class Game extends cc.Component {
         this.physicsManager.enabledAccumulator = true;
         cc.PhysicsManager.FIXED_TIME_STEP = 1 / 60;
 
-        // cc.director.getPhysicsManager().debugDrawFlags = cc.PhysicsManager.DrawBits.e_aabbBit |
-        //     cc.PhysicsManager.DrawBits.e_jointBit |
-        //     cc.PhysicsManager.DrawBits.e_shapeBit
+        if (this.drawDebug) {
+            cc.director.getPhysicsManager().debugDrawFlags = cc.PhysicsManager.DrawBits.e_aabbBit |
+                cc.PhysicsManager.DrawBits.e_jointBit |
+                cc.PhysicsManager.DrawBits.e_shapeBit
+        }
 
         onEvent(Events.PLAYER_HIT, this.onPlayerHit, this)
         onEvent(Events.DEATH_BARRIER, this.onDeathBarrier, this)

@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "89957bfa-2998-4e4e-a225-e8c6e8bf06d4",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 6400,
+  "height": 640,
+  "platformSettings": {},
+  "subMetas": {
+    "livello-1-scaled": {
+      "ver": "1.0.4",
+      "uuid": "f496a555-896d-4ebf-8e92-02fbb8287b51",
+      "rawTextureUuid": "89957bfa-2998-4e4e-a225-e8c6e8bf06d4",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -32,
+      "trimX": 0,
+      "trimY": 64,
+      "width": 6400,
+      "height": 576,
+      "rawWidth": 6400,
+      "rawHeight": 640,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

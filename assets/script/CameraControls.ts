@@ -25,9 +25,10 @@ export default class CameraControls extends cc.Component {
     onLoad() {
         this.playerNode = cc.Canvas.instance.getComponentInChildren(PlayerControl).node
     }
-
+    
     update(dt: number) {
-
+        
+        this.playerNode = cc.Canvas.instance.getComponentInChildren(PlayerControl).node
         const directionOffset = this.playerNode.getComponent(cc.RigidBody).linearVelocity.x * .1
         let target_position = this.playerNode.getPosition().add(cc.Vec2.RIGHT.mul(directionOffset))
 

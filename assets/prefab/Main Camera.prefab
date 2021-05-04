@@ -58,8 +58,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -360,
-        -640,
+        360,
+        640,
         553.39023,
         0,
         0,
@@ -417,7 +417,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "f0048c10-f03e-4c97-b9d3-3506e1d58952"
+      "__uuid__": "77293bd9-53d0-4fa8-bbc9-31a4d85312ab"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -477,7 +477,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 144,
+      "width": 136.8,
       "height": 100
     },
     "_anchorPoint": {
@@ -489,7 +489,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -72,
+        -68.4,
         -540,
         0,
         0,
@@ -525,7 +525,7 @@
     "alignMode": 1,
     "_target": null,
     "_alignFlags": 44,
-    "_left": 0.3,
+    "_left": 0.31,
     "_right": 0.5,
     "_top": 335,
     "_bottom": 50,
@@ -627,7 +627,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "f0048c10-f03e-4c97-b9d3-3506e1d58952"
+      "__uuid__": "77293bd9-53d0-4fa8-bbc9-31a4d85312ab"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -837,7 +837,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "f0048c10-f03e-4c97-b9d3-3506e1d58952"
+      "__uuid__": "77293bd9-53d0-4fa8-bbc9-31a4d85312ab"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -908,7 +908,6 @@
     "jumpButton": {
       "__id__": 14
     },
-    "player": null,
     "_id": ""
   },
   {
@@ -1656,20 +1655,15 @@
     },
     "_enabled": true,
     "uiNode": {
-      "__id__": 2
+      "__id__": 22
     },
     "retryButton": {
       "__id__": 23
     },
-    "retryScene": {
-      "__uuid__": "f13ec175-ae9c-442e-b922-540789ac43bb"
-    },
     "mainMenuButton": {
       "__id__": 30
     },
-    "mainMenuScene": {
-      "__uuid__": "f13ec175-ae9c-442e-b922-540789ac43bb"
-    },
+    "mainMenuSceneName": "MainMenu",
     "_id": ""
   },
   {
@@ -1730,10 +1724,10 @@
     "alignMode": 1,
     "_target": null,
     "_alignFlags": 45,
-    "_left": -360,
-    "_right": 360,
-    "_top": 640,
-    "_bottom": -640,
+    "_left": 0,
+    "_right": 0,
+    "_top": 0,
+    "_bottom": 0,
     "_verticalCenter": 0,
     "_horizontalCenter": 0,
     "_isAbsLeft": true,
@@ -1754,9 +1748,6 @@
       "__id__": 1
     },
     "_enabled": true,
-    "playerNode": null,
-    "backBGLayer": null,
-    "midBGLayer": null,
     "lerpFactor": 20,
     "minHeight": -200,
     "maxHeight": 1000,

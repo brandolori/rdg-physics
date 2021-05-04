@@ -16,15 +16,12 @@ export default class EndGameManager extends cc.Component {
 
     @property(cc.Node)
     retryButton: cc.Node = null
-    
-    @property(cc.SceneAsset)
-    retryScene: cc.SceneAsset = null
 
     @property(cc.Node)
     mainMenuButton: cc.Node = null
 
-    @property(cc.SceneAsset)
-    mainMenuScene: cc.SceneAsset = null
+    @property
+    mainMenuSceneName = "MainMenu"
 
     onLoad() {
         onEvent(Events.DEATH, this.showDeathUI, this)
@@ -41,11 +38,11 @@ export default class EndGameManager extends cc.Component {
 
     retry() {
         emitEvent(Events.UI_POPDOWN)
-        cc.director.loadScene(this.retryScene.name)
+        cc.director.loadScene(cc.director.getScene().name)
     }
 
     mainMenu() {
         emitEvent(Events.UI_POPDOWN)
-        cc.director.loadScene(this.mainMenuScene.name)
+        cc.director.loadScene(this.mainMenuSceneName)
     }
 }

@@ -3,9 +3,6 @@
  <tileset firstgid="1" name="Ground_Tile" tilewidth="32" tileheight="32" tilecount="1" columns="1">
   <image source="Ground_Tile.png" width="32" height="32"/>
  </tileset>
- <imagelayer id="2" name="Livello immagine 1">
-  <image source="livello-1-scaled.png" width="6400" height="640"/>
- </imagelayer>
  <objectgroup id="3" name="Collisions">
   <object id="1" x="0" y="576" width="896" height="64"/>
   <object id="2" x="1056" y="576" width="1184" height="64"/>

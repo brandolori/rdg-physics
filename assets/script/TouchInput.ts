@@ -17,7 +17,7 @@ export default class TouchInput extends cc.Component {
     player: PlayerControl
 
     onLoad() {
-        this.player = cc.Canvas.instance.getComponentInChildren(PlayerControl)
+        this.player = cc.director.getScene().getComponentInChildren(PlayerControl)
 
         // start
         this.leftButton.on(cc.Node.EventType.TOUCH_START, () => this.player.moveLeft())

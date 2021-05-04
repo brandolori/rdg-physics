@@ -23,22 +23,24 @@ export default class CameraControls extends cc.Component {
     maxHeight = 400
 
     onLoad() {
-        this.playerNode = cc.Canvas.instance.getComponentInChildren(PlayerControl).node
+        this.playerNode = cc.director.getScene().getComponentInChildren(PlayerControl).node
     }
-    
+
     update(dt: number) {
-        
-        this.playerNode = cc.Canvas.instance.getComponentInChildren(PlayerControl).node
+
         const directionOffset = this.playerNode.getComponent(cc.RigidBody).linearVelocity.x * .1
-        let target_position = this.playerNode.getPosition().add(cc.Vec2.RIGHT.mul(directionOffset))
 
-        target_position.y = cc.misc.clampf(target_position.y, this.minHeight, this.maxHeight);
+        const playerPosition = this.playerNode.getPosition().sub(cc.v2(cc.Canvas.instance.node.width / 2, cc.Canvas.instance.node.height / 2))
 
-        let current_position = this.node.getPosition();
+        let targetPosition = playerPosition.add(cc.Vec2.RIGHT.mul(directionOffset))
 
-        current_position.lerp(target_position, this.lerpFactor * dt, current_position);
+        targetPosition.y = cc.misc.clampf(targetPosition.y, this.minHeight, this.maxHeight);
 
-        this.node.setPosition(current_position);
+        let currentPosition = this.node.getPosition();
+
+        currentPosition.lerp(targetPosition, this.lerpFactor * dt, currentPosition);
+
+        this.node.setPosition(currentPosition);
 
         // this.backBGLayer.setPosition(current_position.x / 2, current_position.y / 2);
 

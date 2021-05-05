@@ -20,18 +20,18 @@ export default class TouchInput extends cc.Component {
         this.player = cc.director.getScene().getComponentInChildren(PlayerControl)
 
         // start
-        this.leftButton.on(cc.Node.EventType.TOUCH_START, () => this.player.moveLeft())
-        this.rightButton.on(cc.Node.EventType.TOUCH_START, () => this.player.moveRight())
-        this.jumpButton.on(cc.Node.EventType.TOUCH_START, () => this.player.jump())
+        this.leftButton.on(cc.Node.EventType.TOUCH_START, () => this.player.leftPressed = true)
+        this.rightButton.on(cc.Node.EventType.TOUCH_START, () => this.player.rightPressed = true)
+        this.jumpButton.on(cc.Node.EventType.TOUCH_START, () => this.player.upPressed = true)
 
         // end and cancel
-        this.leftButton.on(cc.Node.EventType.TOUCH_END, () => this.player.stopLRMovement())
-        this.leftButton.on(cc.Node.EventType.TOUCH_CANCEL, () => this.player.stopLRMovement())
+        this.leftButton.on(cc.Node.EventType.TOUCH_END, () => this.player.leftPressed = false)
+        this.leftButton.on(cc.Node.EventType.TOUCH_CANCEL, () => this.player.leftPressed = false)
 
-        this.rightButton.on(cc.Node.EventType.TOUCH_END, () => this.player.stopLRMovement())
-        this.rightButton.on(cc.Node.EventType.TOUCH_CANCEL, () => this.player.stopLRMovement())
+        this.rightButton.on(cc.Node.EventType.TOUCH_END, () => this.player.rightPressed = false)
+        this.rightButton.on(cc.Node.EventType.TOUCH_CANCEL, () => this.player.rightPressed = false)
 
-        this.rightButton.on(cc.Node.EventType.TOUCH_END, () => this.player.stopLRMovement())
-        this.rightButton.on(cc.Node.EventType.TOUCH_CANCEL, () => this.player.stopLRMovement())
+        this.jumpButton.on(cc.Node.EventType.TOUCH_END, () => this.player.upPressed = false)
+        this.jumpButton.on(cc.Node.EventType.TOUCH_CANCEL, () => this.player.upPressed = false)
     }
 }

@@ -21,6 +21,9 @@ export default class PlayerControl extends cc.Component {
     rigidBody: cc.RigidBody
     direction = 0
     isGrounded = false
+    leftPressed = false
+    rightPressed = false
+    upPressed = false
 
     onLoad() {
         onEvent(Events.PLAYER_BOUNCE, this.onBounce, this)
@@ -39,20 +42,22 @@ export default class PlayerControl extends cc.Component {
 
     onKeyPressed(event) {
 
-        let key_code = event.keyCode;
-
-        switch (key_code) {
+        switch (event.keyCode) {
 
             case cc.macro.KEY.left:
-                this.moveLeft()
+            case cc.macro.KEY.a:
+                this.leftPressed = true
                 break;
 
             case cc.macro.KEY.right:
-                this.moveRight()
+            case cc.macro.KEY.d:
+                this.rightPressed = true
                 break;
 
+            case cc.macro.KEY.w:
             case cc.macro.KEY.up:
-                this.jump()
+            case cc.macro.KEY.space:
+                this.upPressed = true
                 break;
         }
 
@@ -60,13 +65,22 @@ export default class PlayerControl extends cc.Component {
 
     onKeyReleased(event) {
 
-        let key_code = event.keyCode;
-
-        switch (key_code) {
+        switch (event.keyCode) {
 
             case cc.macro.KEY.left:
+            case cc.macro.KEY.a:
+                this.leftPressed = false
+                break;
+
             case cc.macro.KEY.right:
-                this.stopLRMovement()
+            case cc.macro.KEY.d:
+                this.rightPressed = false
+                break;
+
+            case cc.macro.KEY.w:
+            case cc.macro.KEY.up:
+            case cc.macro.KEY.space:
+                this.upPressed = false
                 break;
 
         }
@@ -74,27 +88,21 @@ export default class PlayerControl extends cc.Component {
 
     jump() {
         if (this.feet.isGrounded) {
-            this.rigidBody.applyForceToCenter(cc.v2(0, this.jumpForce), true);
-            this.feet.isGrounded = false;
+            this.rigidBody.applyForceToCenter(cc.v2(0, this.jumpForce), true)
+            this.feet.isGrounded = false
         }
-    }
-
-    moveLeft() {
-        this.direction = -1;
-    }
-
-    moveRight() {
-        this.direction = 1;
-    }
-
-    stopLRMovement() {
-        this.direction = 0;
     }
 
     update(dt) {
 
+        this.direction = (+this.rightPressed) - (+this.leftPressed)
+
         if ((this.direction > 0 && this.rigidBody.linearVelocity.x < this.velocityMax) || (this.direction < 0 && this.rigidBody.linearVelocity.x > -this.velocityMax)) {
             this.rigidBody.applyForceToCenter(cc.v2(this.direction * this.walkForce, 0), true);
+        }
+
+        if (this.upPressed) {
+            this.jump()
         }
 
         this.node.scaleX = this.direction >= 0 ? -1 : 1

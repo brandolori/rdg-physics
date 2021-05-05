@@ -10,6 +10,9 @@ export default class Game extends cc.Component {
     @property
     drawDebug = false
 
+    @property
+    gravity = -1000
+
     state: "active" | "suspended" = "active"
     physicsManager: cc.PhysicsManager
 
@@ -31,7 +34,7 @@ export default class Game extends cc.Component {
         Game.instance = this
         this.physicsManager = cc.director.getPhysicsManager()
         this.physicsManager.enabled = true;
-        this.physicsManager.gravity = cc.v2(0, -2000);
+        this.physicsManager.gravity = cc.v2(0, this.gravity);
 
         // Physics timestep, default FIXED_TIME_STEP is 1/60
         this.physicsManager.enabledAccumulator = true;

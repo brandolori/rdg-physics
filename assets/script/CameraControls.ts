@@ -26,7 +26,7 @@ export default class CameraControls extends cc.Component {
         this.playerNode = cc.director.getScene().getComponentInChildren(PlayerControl).node
     }
 
-    update(dt: number) {
+    lateUpdate(dt: number) {
 
         const directionOffset = this.playerNode.getComponent(cc.RigidBody).linearVelocity.x * .1
 

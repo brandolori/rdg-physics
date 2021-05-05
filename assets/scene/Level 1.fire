@@ -25260,7 +25260,7 @@
     "_enabled": true,
     "velocityMax": 400,
     "walkForce": 30000,
-    "jumpForce": 800000,
+    "jumpForce": 600000,
     "feet": {
       "__id__": 812
     },
@@ -25313,6 +25313,7 @@
     },
     "_enabled": true,
     "drawDebug": false,
+    "gravity": -1000,
     "_id": "15PyWuxAFIIYmMABhhlfbn"
   },
   {

@@ -27,7 +27,7 @@ export default class NewClass extends cc.Component {
             node.anchorX = .5
             node.anchorY = .5
 
-            const collider = node.addComponent(cc.PhysicsBoxCollider)
+            const collider = node.getComponent(cc.PhysicsBoxCollider)
 
             collider.size = new cc.Size(obj.width, obj.height)
             collider.offset = new cc.Vec2(obj.width / 2, obj.height / 2)

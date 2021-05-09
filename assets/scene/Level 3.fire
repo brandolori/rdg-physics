@@ -5176,7 +5176,7 @@
     "vessel": {
       "__id__": 144
     },
-    "duration": 5,
+    "speed": 100,
     "_id": "9bgptz9ZRCipPSw9NSI68Y"
   },
   {
@@ -5768,7 +5768,7 @@
     "vessel": {
       "__id__": 163
     },
-    "duration": 5,
+    "speed": 100,
     "_id": "cek/g3XZxBN5P2REs1d6PU"
   },
   {
@@ -6360,7 +6360,7 @@
     "vessel": {
       "__id__": 182
     },
-    "duration": 5,
+    "speed": 100,
     "_id": "e1NiS0pvZDB6bPYWAu6D82"
   },
   {
@@ -6952,7 +6952,7 @@
     "vessel": {
       "__id__": 201
     },
-    "duration": 5,
+    "speed": 100,
     "_id": "54Tow8A4hPKrhiwUPADC9z"
   },
   {
@@ -7544,7 +7544,7 @@
     "vessel": {
       "__id__": 220
     },
-    "duration": 5,
+    "speed": 100,
     "_id": "74ttGNROJK/otsd9WrFdfl"
   },
   {
@@ -8136,7 +8136,7 @@
     "vessel": {
       "__id__": 239
     },
-    "duration": 5,
+    "speed": 100,
     "_id": "91NPgQTHxLzbpjK7PaGacD"
   },
   {
@@ -8728,7 +8728,7 @@
     "vessel": {
       "__id__": 258
     },
-    "duration": 5,
+    "speed": 100,
     "_id": "f0tqa+KthHRI3y2+0gX6UT"
   },
   {
@@ -9320,7 +9320,7 @@
     "vessel": {
       "__id__": 277
     },
-    "duration": 5,
+    "speed": 100,
     "_id": "50FxFLHR1PUa2ZVpDq5jVJ"
   },
   {
@@ -9912,7 +9912,7 @@
     "vessel": {
       "__id__": 296
     },
-    "duration": 5,
+    "speed": 100,
     "_id": "7flrquxkZNWbC6x+eZ0Q3n"
   },
   {
@@ -10504,7 +10504,7 @@
     "vessel": {
       "__id__": 315
     },
-    "duration": 5,
+    "speed": 100,
     "_id": "e1KZyZLsBAuYdGFdic2hUL"
   },
   {
@@ -11096,7 +11096,7 @@
     "vessel": {
       "__id__": 334
     },
-    "duration": 5,
+    "speed": 100,
     "_id": "3dT4gshC5BeKKh9cSrlBQS"
   },
   {
@@ -11688,7 +11688,7 @@
     "vessel": {
       "__id__": 353
     },
-    "duration": 5,
+    "speed": 100,
     "_id": "57jnhDCs1EgJP8IWGBvNA5"
   },
   {
@@ -12280,7 +12280,7 @@
     "vessel": {
       "__id__": 372
     },
-    "duration": 5,
+    "speed": 100,
     "_id": "3ae3lhHB9Lc5uuJz8MaZxC"
   },
   {
@@ -12872,7 +12872,7 @@
     "vessel": {
       "__id__": 391
     },
-    "duration": 5,
+    "speed": 100,
     "_id": "ddvH9tOEBKuacJxRiFbRNt"
   },
   {
@@ -13464,7 +13464,7 @@
     "vessel": {
       "__id__": 410
     },
-    "duration": 5,
+    "speed": 100,
     "_id": "ecKrCbaoFC5LxG1rmVI6SG"
   },
   {
@@ -14056,7 +14056,7 @@
     "vessel": {
       "__id__": 429
     },
-    "duration": 5,
+    "speed": 100,
     "_id": "65CM8AKYVPs5eKdYuPIFCj"
   },
   {
@@ -14648,7 +14648,7 @@
     "vessel": {
       "__id__": 448
     },
-    "duration": 5,
+    "speed": 100,
     "_id": "86Q7UyBuVA2ZcBFFPiQVDW"
   },
   {
@@ -15240,7 +15240,7 @@
     "vessel": {
       "__id__": 467
     },
-    "duration": 5,
+    "speed": 100,
     "_id": "bd9LICk2ZKp7m6j6G4jobN"
   },
   {
@@ -15832,7 +15832,7 @@
     "vessel": {
       "__id__": 486
     },
-    "duration": 5,
+    "speed": 100,
     "_id": "66D6raRXRKzoBTPsZMO+4S"
   },
   {
@@ -16424,7 +16424,7 @@
     "vessel": {
       "__id__": 505
     },
-    "duration": 5,
+    "speed": 100,
     "_id": "24sSbp8ARFRrDENj3W9s0r"
   },
   {
@@ -17016,7 +17016,7 @@
     "vessel": {
       "__id__": 524
     },
-    "duration": 5,
+    "speed": 100,
     "_id": "69Y60NfENNNbZ9fuh550qo"
   },
   {
@@ -17344,7 +17344,7 @@
     },
     "_enabled": true,
     "velocityMax": 400,
-    "walkForce": 30000,
+    "walkForce": 10000,
     "jumpForce": 550000,
     "feet": {
       "__id__": 544

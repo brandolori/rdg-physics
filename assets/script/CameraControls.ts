@@ -30,7 +30,7 @@ export default class CameraControls extends cc.Component {
 
         const directionOffset = this.playerNode.getComponent(cc.RigidBody).linearVelocity.x * .1
 
-        const playerPosition = this.playerNode.getPosition().sub(cc.v2(cc.Canvas.instance.node.width / 2, cc.Canvas.instance.node.height / 2))
+        const playerPosition = this.playerNode.getPosition()
 
         let targetPosition = playerPosition.add(cc.Vec2.RIGHT.mul(directionOffset))
 

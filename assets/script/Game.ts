@@ -16,19 +16,6 @@ export default class Game extends cc.Component {
     state: "active" | "suspended" = "active"
     physicsManager: cc.PhysicsManager
 
-    suspendGame() {
-        this.physicsManager.enabled = false
-        this.state = "suspended"
-        emitEvent(Events.GAME_SUSPEND)
-    }
-
-    resumeGame() {
-        this.physicsManager.enabled = true
-        this.state = "active"
-        emitEvent(Events.GAME_RESUME)
-    }
-
-
     onLoad() {
         // singleton 😯
         Game.instance = this
@@ -48,6 +35,21 @@ export default class Game extends cc.Component {
 
         onEvent(Events.PLAYER_HIT, this.onPlayerHit, this)
         onEvent(Events.DEATH_BARRIER, this.onDeathBarrier, this)
+
+        onEvent(Events.PAUSE, this.suspendGame, this)
+        onEvent(Events.UNPAUSE, this.resumeGame, this)
+    }
+
+    suspendGame() {
+        this.physicsManager.enabled = false
+        this.state = "suspended"
+        emitEvent(Events.GAME_SUSPEND)
+    }
+
+    resumeGame() {
+        this.physicsManager.enabled = true
+        this.state = "active"
+        emitEvent(Events.GAME_RESUME)
     }
 
     onPlayerHit() {

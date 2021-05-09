@@ -36,7 +36,7 @@ export default class IngameCardManager extends cc.Component {
     onTouchStart(event: cc.Event.EventTouch) {
         this.cardManager.closeDeck()
 
-        emitEvent(Events.HIDE_CARD)
+        // emitEvent(Events.HIDE_CARD)
 
         // disable close button
         this.onTouchCloseNode.off(cc.Node.EventType.TOUCH_END, this.onTouchStart, this)

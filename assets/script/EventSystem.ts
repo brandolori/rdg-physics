@@ -18,7 +18,6 @@ const Events = {
 
     /** requires an argument, a card prefab */
     DISPLAY_CARD: "display-card",
-    HIDE_CARD: "display-card",
     CARD_OPEN: "card-open",
     CARD_CHANGE: "card-change",
 

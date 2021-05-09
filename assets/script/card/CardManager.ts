@@ -26,7 +26,7 @@ export default class CardManager extends cc.Component {
         this.cardNode = inst
         inst.parent = this.node
 
-        inst.on(cc.Node.EventType.TOUCH_START, this.onTouchStart, this)
+        inst.on(cc.Node.EventType.TOUCH_END, this.onTouchStart, this)
 
         const maxIndexLabel = cc.find("Index Counter/Max Index", inst).getComponent(cc.Label)
         maxIndexLabel.string = cards.length.toString()
@@ -82,6 +82,7 @@ export default class CardManager extends cc.Component {
 
     closeDeck() {
         emitEvent(Events.UI_POPDOWN)
+        this.cardNode.destroy()
         // this.cardNode.getComponent(CardPopupAnimation).animateOut(() => this.cardNode.destroy())
     }
 

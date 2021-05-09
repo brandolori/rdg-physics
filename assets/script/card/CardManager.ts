@@ -1,6 +1,6 @@
+import { emitEvent, Events } from "../EventSystem";
 import { Card } from "./CardSerializer";
-import TrashEvents from "../TrashEvents";
-import CardPopupAnimation from "../Animation/CardPopupAnimation";
+// import CardPopupAnimation from "../Animation/CardPopupAnimation";
 
 const { ccclass, property } = cc._decorator;
 
@@ -32,9 +32,9 @@ export default class CardManager extends cc.Component {
         maxIndexLabel.string = cards.length.toString()
 
         this.updateCard()
-        cc.Canvas.instance.node.emit(TrashEvents.CARD_OPEN)
-        cc.Canvas.instance.node.emit(TrashEvents.UI_POPUP)
-        this.cardNode.getComponent(CardPopupAnimation).animateIn()
+        emitEvent(Events.CARD_OPEN)
+        emitEvent(Events.UI_POPUP)
+        // this.cardNode.getComponent(CardPopupAnimation).animateIn()
     }
 
     updateCard() {
@@ -77,12 +77,12 @@ export default class CardManager extends cc.Component {
                 this.updateCard()
             }
         }
-        cc.Canvas.instance.node.emit(TrashEvents.CARD_CHANGE)
+        emitEvent(Events.CARD_CHANGE)
     }
 
     closeDeck() {
-        cc.Canvas.instance.node.emit(TrashEvents.UI_POPDOWN)
-        this.cardNode.getComponent(CardPopupAnimation).animateOut(() => this.cardNode.destroy())
+        emitEvent(Events.UI_POPDOWN)
+        // this.cardNode.getComponent(CardPopupAnimation).animateOut(() => this.cardNode.destroy())
     }
 
 }

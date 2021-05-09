@@ -15,10 +15,16 @@ export default class LinearMovement extends cc.Component {
     vessel: cc.Node = null
 
     @property
-    duration = 5
+    speed = 100
+
+    duration: number
 
     progress = 0
 
+
+    start() {
+        this.duration = this.nodeA.position.sub(this.nodeB.position).mag() / this.speed
+    }
 
     update(dt: number) {
         if (Game.instance.state != "active")

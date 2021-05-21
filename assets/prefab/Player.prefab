@@ -37,10 +37,13 @@
       },
       {
         "__id__": 11
+      },
+      {
+        "__id__": 12
       }
     ],
     "_prefab": {
-      "__id__": 12
+      "__id__": 13
     },
     "_opacity": 255,
     "_color": {
@@ -64,8 +67,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -64.892,
-        364.919,
+        -144.467,
+        361.193,
         0,
         0,
         0,
@@ -323,7 +326,7 @@
     },
     "_enabled": true,
     "velocityMax": 400,
-    "walkForce": 30000,
+    "walkForce": 10000,
     "jumpForce": 550000,
     "feet": {
       "__id__": 3
@@ -355,6 +358,29 @@
     "referenceAngle": 0,
     "_frequency": 0,
     "_dampingRatio": 0,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.Animation",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "_defaultClip": null,
+    "_clips": [
+      {
+        "__uuid__": "78a04aa9-9e87-4f61-8c5b-71ee40ec75df"
+      },
+      {
+        "__uuid__": "7f145f53-58a6-44fb-93c2-42fb07c82346"
+      },
+      {
+        "__uuid__": "df96dcd3-87f1-4899-8860-b7148b10edea"
+      }
+    ],
+    "playOnLoad": true,
     "_id": ""
   },
   {

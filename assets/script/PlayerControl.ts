@@ -3,6 +3,8 @@ import PlayerFeet from "./PlayerFeet";
 
 const { ccclass, property } = cc._decorator;
 
+type AnimState = "walking" | "jumping" | "idle"
+
 @ccclass
 export default class PlayerControl extends cc.Component {
 
@@ -24,6 +26,26 @@ export default class PlayerControl extends cc.Component {
     leftPressed = false
     rightPressed = false
     upPressed = false
+    anim: cc.Animation;
+    animState: AnimState
+
+    setAnimState(state: AnimState) {
+        if (this.animState != state) {
+            switch (state) {
+                case "idle":
+                    this.anim.play("PlayerIdle")
+                    break;
+                case "jumping":
+                    this.anim.play("PlayerJump")
+                    break;
+                case "walking":
+                    this.anim.play("PlayerWalk")
+                    break;
+            }
+            console.log(`switching to ${state}`)
+            this.animState = state
+        }
+    }
 
     onLoad() {
         onEvent(Events.PLAYER_BOUNCE, this.onBounce, this)
@@ -31,9 +53,12 @@ export default class PlayerControl extends cc.Component {
         // Rigid Body
         this.rigidBody = this.node.getComponent(cc.RigidBody);
 
+        this.anim = this.getComponent(cc.Animation);
+
         // Key events
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyPressed, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyReleased, this);
+
     }
 
     onBounce() {
@@ -96,6 +121,17 @@ export default class PlayerControl extends cc.Component {
     update(dt) {
 
         this.direction = (+this.rightPressed) - (+this.leftPressed)
+
+        // animation
+        if (!this.feet.isGrounded) {
+            this.setAnimState("jumping")
+        } else {
+            if (this.direction != 0) {
+                this.setAnimState("walking")
+            } else {
+                this.setAnimState("idle")
+            }
+        }
 
         if ((this.direction > 0 && this.rigidBody.linearVelocity.x < this.velocityMax) || (this.direction < 0 && this.rigidBody.linearVelocity.x > -this.velocityMax)) {
             this.rigidBody.applyForceToCenter(cc.v2(this.direction * this.walkForce, 0), true);

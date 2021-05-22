@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "e7478209-f3f7-47d8-8079-6186b8b3d425",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "point",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 200,
+  "height": 20,
+  "platformSettings": {},
+  "subMetas": {
+    "Sfondo_sprite_1": {
+      "ver": "1.0.4",
+      "uuid": "e1133f5b-5bfe-408b-9ebf-9cd433505f14",
+      "rawTextureUuid": "e7478209-f3f7-47d8-8079-6186b8b3d425",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 200,
+      "height": 20,
+      "rawWidth": 200,
+      "rawHeight": 20,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

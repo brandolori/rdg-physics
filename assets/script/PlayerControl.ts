@@ -48,7 +48,7 @@ export default class PlayerControl extends cc.Component {
     }
 
     onLoad() {
-        onEvent(Events.PLAYER_BOUNCE, this.onBounce, this)
+        onEvent(Events.PLAYER_BOUNCE, this.jump, this)
 
         // Rigid Body
         this.rigidBody = this.node.getComponent(cc.RigidBody);
@@ -59,10 +59,6 @@ export default class PlayerControl extends cc.Component {
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyPressed, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyReleased, this);
 
-    }
-
-    onBounce() {
-        this.rigidBody.applyForceToCenter(cc.v2(0, this.jumpForce), true);
     }
 
     onKeyPressed(event) {
@@ -112,10 +108,7 @@ export default class PlayerControl extends cc.Component {
     }
 
     jump() {
-        if (this.feet.isGrounded) {
-            this.rigidBody.applyForceToCenter(cc.v2(0, this.jumpForce), true)
-            this.feet.isGrounded = false
-        }
+        this.rigidBody.linearVelocity = new cc.Vec2(this.rigidBody.linearVelocity.x, this.jumpForce)
     }
 
     update(dt) {
@@ -137,8 +130,9 @@ export default class PlayerControl extends cc.Component {
             this.rigidBody.applyForceToCenter(cc.v2(this.direction * this.walkForce, 0), true);
         }
 
-        if (this.upPressed) {
+        if (this.upPressed && this.feet.isGrounded) {
             this.jump()
+            this.feet.isGrounded = false
         }
 
         this.node.scaleX = this.direction >= 0 ? -1 : 1

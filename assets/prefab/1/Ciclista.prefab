@@ -58,8 +58,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        684.309,
-        -226.463,
+        15136.461,
+        153.019,
         0,
         0,
         0,
@@ -436,7 +436,7 @@
         "__uuid__": "95eba89d-39b0-4ba4-8e27-c63c932b6896"
       }
     ],
-    "playOnLoad": false,
+    "playOnLoad": true,
     "_id": ""
   },
   {
@@ -485,7 +485,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        0,
+        398.789,
         0,
         0,
         0,
@@ -556,7 +556,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        0,
+        -400.734,
         0,
         0,
         0,

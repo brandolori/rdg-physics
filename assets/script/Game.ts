@@ -35,8 +35,9 @@ export default class Game extends cc.Component {
                 cc.PhysicsManager.DrawBits.e_shapeBit
         }
 
-        onEvent(Events.PLAYER_HIT, this.onPlayerHit, this)
-        onEvent(Events.DEATH_BARRIER, this.onDeathBarrier, this)
+        onEvent(Events.PLAYER_HIT, this.die, this)
+        onEvent(Events.DEATH_BARRIER, this.die, this)
+        onEvent(Events.END_GAME, () => this.suspendGame())
 
         onEvent(Events.PAUSE, this.suspendGame, this)
         onEvent(Events.UNPAUSE, this.resumeGame, this)
@@ -56,13 +57,10 @@ export default class Game extends cc.Component {
         emitEvent(Events.GAME_RESUME)
     }
 
-    onPlayerHit() {
+    die() {
         this.suspendGame()
         emitEvent(Events.DEATH, this.score)
     }
 
-    onDeathBarrier() {
-        this.suspendGame()
-        emitEvent(Events.DEATH, this.score)
-    }
+
 }

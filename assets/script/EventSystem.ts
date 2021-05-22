@@ -10,6 +10,7 @@ const Events = {
     PLAYER_BOUNCE: "player-bounce",
     PLAYER_HIT: "player-hit",
     DEATH_BARRIER: "death-barrier",
+    END_GAME: "end-game",
 
     UI_POPUP: "ui-popup",
     UI_POPDOWN: "ui-popdown",

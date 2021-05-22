@@ -32,6 +32,7 @@ export default class EndGameManager extends cc.Component {
 
     onLoad() {
         onEvent(Events.DEATH, this.showDeathUI, this)
+        onEvent(Events.END_GAME, this.showDeathUI, this)
         this.retryButton.on(cc.Node.EventType.TOUCH_START, this.retry, this)
         this.mainMenuButton.on(cc.Node.EventType.TOUCH_START, this.mainMenu, this)
     }

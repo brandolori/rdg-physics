@@ -1,6 +1,6 @@
 {
   "ver": "2.3.5",
-  "uuid": "66f5ba83-abe4-4062-b4ab-d8d008e1f99f",
+  "uuid": "3d977c3c-9bbc-4d2c-b60d-e1e861821199",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "point",
@@ -11,18 +11,18 @@
   "height": 32,
   "platformSettings": {},
   "subMetas": {
-    "darsena": {
+    "crab_1": {
       "ver": "1.0.4",
-      "uuid": "bfa9ab48-c86b-4b1e-b759-9cc58252d2d8",
-      "rawTextureUuid": "66f5ba83-abe4-4062-b4ab-d8d008e1f99f",
+      "uuid": "c6c89ab5-0000-44bc-9616-e0eeea0d52c0",
+      "rawTextureUuid": "3d977c3c-9bbc-4d2c-b60d-e1e861821199",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
-      "offsetX": 0,
+      "offsetX": -0.5,
       "offsetY": 0,
       "trimX": 0,
       "trimY": 0,
-      "width": 32,
+      "width": 31,
       "height": 32,
       "rawWidth": 32,
       "rawHeight": 32,

@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.6.0" orientation="orthogonal" renderorder="right-down" width="200" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="296">
- <tileset firstgid="1" name="Ground_Tile" tilewidth="32" tileheight="32" tilecount="1" columns="1">
-  <image source="Ground_Tile.png" width="32" height="32"/>
+<map version="1.5" tiledversion="1.6.0" orientation="orthogonal" renderorder="right-down" width="200" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="296">
+ <tileset firstgid="1" name="Tiles" tilewidth="32" tileheight="32" tilecount="3" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="32" height="32" source="darsena.png"/>
+  </tile>
+  <tile id="1">
+   <image width="32" height="32" source="grandhotel.png"/>
+  </tile>
+  <tile id="2">
+   <image width="32" height="32" source="spiaggia.png"/>
+  </tile>
  </tileset>
- <imagelayer id="4" name="piattaforme fisse">
-  <image source="../../../../../Download/RGD/1-sabaku/pog level/Piattaforme fisse_sprite_1_scaled.png" width="6400" height="640"/>
- </imagelayer>
- <objectgroup id="5" name="Collisions">
+ <layer id="10" name="Tiles" width="200" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztm9sOwyAIhmv7/u+8i6WZMx5AQRD4EtJuyVQW/nBYd11BgCdJH2ADHnwMePAQO5Z9vDML6LEcOy9cPt4Vs8wzaScT+giCNrXYSZmd8hrrY6CH1XzEmc9ScW/VrFGr5zzUeLspY8diPFnzZydW+ohZvOij1kvvsuCLlt4ds3eph54+OOoV6Hq9HmRUS736kCD0cTaY/KFJH7X3resDk48id9GAiXWIPrB9sjV9WKivpOufXUB8pNYHllV9QPegiNOZHuPOrqfqxTPSc1dOy31sxSV3X+1VD0/jehraZ1UzOaNWg1noP8p1Nc/LtMyqIPTO50kfEvHDvR+VX9xxrFkfPSCzqlH/u7IP5HOQnrxXW2nLH5Ra1ZY3WljTB/X65RV6Bop5gKQ+VhidGVtbYb+D2ZhuPSMV/GjpoqcPLq2erA/J3/LLmmt0P3qGMBjrQlIfYf82+38O6yY9d5WwDxv2BL8=
+  </data>
+ </layer>
+ <objectgroup id="5" name="Collisions" visible="0">
   <object id="40" x="0" y="256" width="992" height="32"/>
   <object id="41" x="672" y="96" width="160" height="32"/>
   <object id="43" x="960" y="288" width="32" height="256"/>
@@ -88,10 +99,7 @@
   <object id="125" x="6368" y="0" width="32" height="608"/>
   <object id="126" x="6336" y="480" width="32" height="32"/>
  </objectgroup>
- <imagelayer id="6" name="monete">
-  <image source="../../../../../Download/RGD/1-sabaku/pog level/Monete_sprite_1_scaled.png" width="6400" height="640"/>
- </imagelayer>
- <objectgroup id="7" name="Coins">
+ <objectgroup id="7" name="Coins" visible="0">
   <object id="130" x="352" y="224" width="32" height="32"/>
   <object id="131" x="384" y="224" width="32" height="32"/>
   <object id="132" x="416" y="224" width="32" height="32"/>
@@ -193,10 +201,7 @@
   <object id="242" x="6176" y="448" width="32" height="32"/>
   <object id="243" x="6208" y="448" width="32" height="32"/>
  </objectgroup>
- <imagelayer id="8" name="spine">
-  <image source="../../../../../Download/RGD/1-sabaku/pog level/Spine_sprite_1_scaled.png" width="6400" height="640"/>
- </imagelayer>
- <objectgroup id="9" name="StaticObstacles">
+ <objectgroup id="9" name="StaticObstacles" visible="0">
   <object id="248" x="2464" y="320" width="32" height="32"/>
   <object id="249" x="2560" y="192" width="32" height="32"/>
   <object id="250" x="2560" y="576" width="32" height="32"/>

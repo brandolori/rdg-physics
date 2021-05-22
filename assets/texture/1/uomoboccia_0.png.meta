@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "8061d354-0823-4628-b17e-65d020b37519",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "point",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 32,
+  "height": 32,
+  "platformSettings": {},
+  "subMetas": {
+    "uomoboccia_0": {
+      "ver": "1.0.4",
+      "uuid": "f793bf20-52b9-4f4b-8873-71177bf99b83",
+      "rawTextureUuid": "8061d354-0823-4628-b17e-65d020b37519",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1.5,
+      "offsetY": -1,
+      "trimX": 6,
+      "trimY": 2,
+      "width": 23,
+      "height": 30,
+      "rawWidth": 32,
+      "rawHeight": 32,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

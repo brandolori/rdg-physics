@@ -17,6 +17,9 @@ export default class LinearMovement extends cc.Component {
     @property
     speed = 100
 
+    @property
+    flip = false
+
     duration: number
 
     progress = 0
@@ -35,6 +38,9 @@ export default class LinearMovement extends cc.Component {
         const x = Math.abs(1 - this.progress * 2)
         this.vessel.x = cc.misc.lerp(this.nodeA.x, this.nodeB.x, x)
         this.vessel.y = cc.misc.lerp(this.nodeA.y, this.nodeB.y, x)
+
+        if (this.flip)
+            this.vessel.scaleX = this.progress < .5 ? -1 : 1
 
     }
 

@@ -1,4 +1,5 @@
 import { emitEvent, Events, onEvent } from "./EventSystem";
+import LevelSpecific from "./LevelSpecific";
 
 const { ccclass, property } = cc._decorator;
 
@@ -7,6 +8,9 @@ export default class EndGameManager extends cc.Component {
 
     @property(cc.Node)
     uiNode: cc.Node = null
+
+    @property(cc.Label)
+    scoreLabel: cc.Label = null
 
     // @property(cc.Label)
     // scoreLabel: cc.Label = null
@@ -20,6 +24,9 @@ export default class EndGameManager extends cc.Component {
     @property(cc.Node)
     mainMenuButton: cc.Node = null
 
+    @property(cc.Node)
+    shareButton: cc.Node = null
+
     @property
     mainMenuSceneName = "MainMenu"
 
@@ -29,10 +36,13 @@ export default class EndGameManager extends cc.Component {
         this.mainMenuButton.on(cc.Node.EventType.TOUCH_START, this.mainMenu, this)
     }
 
-    showDeathUI() {
+    showDeathUI(score: number) {
         // this.inGameUI.active = false
         this.uiNode.active = true
-        // this.scoreLabel.string = score.toString()
+        this.scoreLabel.string = LevelSpecific.instance.gameEndString.replace("{score}", score.toString())
+        this.shareButton.on(cc.Node.EventType.TOUCH_END, () => {
+            console.log(LevelSpecific.instance.shareEndString.replace("{score}", score.toString()))
+        })
         emitEvent(Events.UI_POPUP)
     }
 

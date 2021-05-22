@@ -24,7 +24,7 @@
       }
     ],
     "_prefab": {
-      "__id__": 5
+      "__id__": 4
     },
     "_opacity": 255,
     "_color": {
@@ -84,28 +84,17 @@
     "cards": [
       {
         "__id__": 3
-      },
-      {
-        "__id__": 4
       }
     ],
     "_id": ""
   },
   {
     "__type__": "CardSerializer",
-    "title": "Lorem ipsum",
+    "title": "Grand Hotel",
     "image": {
       "__uuid__": "f1d94d49-a309-4b11-97bb-26e2c82ed324"
     },
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-  },
-  {
-    "__type__": "CardSerializer",
-    "title": "Yada yada yada",
-    "image": {
-      "__uuid__": "b075f80b-c2ed-4ac4-a40b-f053c432dfd5"
-    },
-    "text": "Yada yada yada yada, yada yada yada"
+    "text": "Con i suoi 622 posti barca e uno specchio d'acqua che supera i 100.000 metri quadrati, la Darsena è il nuovo gioiello dell'Adriatico, frequentato dagli amanti della vela e del diportismo. Offre infinite passeggiate dalla vista unica sul mare ed è circondato da ristoranti e locali accoglienti. "
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -113,7 +102,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "32545fe7-5668-4f59-ba05-1a0218dbb105"
+      "__uuid__": "fe62597e-345a-4769-acf2-d027dc729976"
     },
     "fileId": "",
     "sync": false

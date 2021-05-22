@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "ac648dab-779c-4046-a180-5c82306b50dc",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "point",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 200,
+  "height": 20,
+  "platformSettings": {},
+  "subMetas": {
+    "Cartelli_sprite_1": {
+      "ver": "1.0.4",
+      "uuid": "761fc602-9065-4c56-9773-78112ef66f51",
+      "rawTextureUuid": "ac648dab-779c-4046-a180-5c82306b50dc",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -13.5,
+      "offsetY": -7.5,
+      "trimX": 28,
+      "trimY": 16,
+      "width": 117,
+      "height": 3,
+      "rawWidth": 200,
+      "rawHeight": 20,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

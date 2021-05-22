@@ -13,6 +13,8 @@ export default class Game extends cc.Component {
     @property
     gravity = -1000
 
+    score = 0
+
     state: "active" | "suspended" = "active"
     physicsManager: cc.PhysicsManager
 
@@ -38,6 +40,8 @@ export default class Game extends cc.Component {
 
         onEvent(Events.PAUSE, this.suspendGame, this)
         onEvent(Events.UNPAUSE, this.resumeGame, this)
+
+        onEvent(Events.COIN, () => this.score += 1)
     }
 
     suspendGame() {
@@ -54,11 +58,11 @@ export default class Game extends cc.Component {
 
     onPlayerHit() {
         this.suspendGame()
-        emitEvent(Events.DEATH)
+        emitEvent(Events.DEATH, this.score)
     }
 
     onDeathBarrier() {
         this.suspendGame()
-        emitEvent(Events.DEATH)
+        emitEvent(Events.DEATH, this.score)
     }
 }

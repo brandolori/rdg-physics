@@ -1,5 +1,14 @@
 const { ccclass, property } = cc._decorator;
 
+@ccclass("ObjGroupSerializer")
+class ObjGroupSerializer {
+    @property()
+    groupName = ""
+
+    @property(cc.Prefab)
+    prefab: cc.Prefab = null
+}
+
 @ccclass
 export default class NewClass extends cc.Component {
 
@@ -9,20 +18,11 @@ export default class NewClass extends cc.Component {
     @property
     collisionGroupName = "Collisions"
 
-    @property
-    coinsGroupName = "Coins"
-
-    @property
-    staticObstaclesGroupName = "StaticObstacles"
-
     @property(cc.Prefab)
     collisionPrefab: cc.Prefab = null
 
-    @property(cc.Prefab)
-    coinsPrefab: cc.Prefab = null
-
-    @property(cc.Prefab)
-    staticObstaclesPrefab: cc.Prefab = null
+    @property(ObjGroupSerializer)
+    groups: ObjGroupSerializer[] = []
 
     onLoad() {
         const collisionObjects = this.worldMap.getObjectGroup(this.collisionGroupName).getObjects()
@@ -42,31 +42,19 @@ export default class NewClass extends cc.Component {
             this.node.addChild(node)
         })
 
-        const coinsObjects = this.worldMap.getObjectGroup(this.coinsGroupName).getObjects()
 
-        coinsObjects.forEach(obj => {
-            const node = cc.instantiate(this.coinsPrefab)
+        this.groups.forEach(group => {
+            const objects = this.worldMap.getObjectGroup(group.groupName).getObjects()
+            objects.forEach(obj => {
+                const node = cc.instantiate(group.prefab)
 
-            node.x = obj.x + obj.width / 2
-            node.y = obj.y - obj.height / 2
+                node.x = obj.x + obj.width / 2
+                node.y = obj.y - obj.height / 2
 
-            this.node.addChild(node)
+                this.node.addChild(node)
 
-            node.scale = 1 / this.node.scale
+                node.scale = 1 / this.node.scale
+            })
         })
-
-        const staticObstaclesObjects = this.worldMap.getObjectGroup(this.staticObstaclesGroupName).getObjects()
-
-        staticObstaclesObjects.forEach(obj => {
-            const node = cc.instantiate(this.staticObstaclesPrefab)
-
-            node.x = obj.x + obj.width / 2
-            node.y = obj.y - obj.height / 2
-
-            this.node.addChild(node)
-
-            node.scale = 1 / this.node.scale
-        })
-
     }
 }

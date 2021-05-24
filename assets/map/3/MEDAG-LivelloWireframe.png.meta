@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "849c3d90-aa45-4ec1-bc53-49786a0e413e",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "point",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 6400,
+  "height": 640,
+  "platformSettings": {},
+  "subMetas": {
+    "MEDAG-LivelloWireframe": {
+      "ver": "1.0.4",
+      "uuid": "d43c5586-7958-4ce1-9620-37df80c22d5d",
+      "rawTextureUuid": "849c3d90-aa45-4ec1-bc53-49786a0e413e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 6400,
+      "height": 640,
+      "rawWidth": 6400,
+      "rawHeight": 640,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

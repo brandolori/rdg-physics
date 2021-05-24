@@ -7,6 +7,9 @@ export default class CameraControls extends cc.Component {
 
     playerNode: cc.Node
 
+    @property([cc.Node])
+    bgArray: cc.Node[] = []
+
     // @property(cc.Node)
     // backBGLayer: cc.Node = null
 
@@ -42,9 +45,8 @@ export default class CameraControls extends cc.Component {
 
         this.node.setPosition(currentPosition);
 
-        // this.backBGLayer.setPosition(current_position.x / 2, current_position.y / 2);
-
-        // this.midBGLayer.setPosition(current_position.x / 4, current_position.y / 4);
-
+        this.bgArray.forEach((el, index) => {
+            el.setPosition(currentPosition.x / Math.pow(2, index + 1), currentPosition.y / Math.pow(2, index + 1))
+        })
     }
 }

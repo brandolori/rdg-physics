@@ -1232,8 +1232,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        496.874,
-        2059.687,
+        476.289,
+        1503.903,
         0,
         0,
         0,
@@ -1415,7 +1415,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "48fb5e43-6cca-4649-8c54-ab26e5782ebd"
+      "__uuid__": "529ad726-7f21-4ec2-922b-a5c538ea8e24"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -1536,13 +1536,13 @@
     "_defaultClip": null,
     "_clips": [
       {
-        "__uuid__": "0433f51e-a205-4b96-842d-9e742de38507"
+        "__uuid__": "f96ff194-f193-4da4-9d3d-391d4d1f39d7"
       },
       {
-        "__uuid__": "784af481-cb03-4dfc-abc5-5c73f6995acf"
+        "__uuid__": "4cfd0e2c-5dcf-4ff9-b901-d31c88ef8605"
       },
       {
-        "__uuid__": "ca55707e-59d8-45f7-8258-7a7803391b78"
+        "__uuid__": "5ea76284-3bc8-4092-b5ed-2bbdf2fd3133"
       }
     ],
     "playOnLoad": true,

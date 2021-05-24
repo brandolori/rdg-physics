@@ -1,6 +1,6 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "PlayerIdle3",
+  "_name": "PlayerIdle",
   "_objFlags": 0,
   "_native": "",
   "_duration": 0.35,
@@ -14,19 +14,19 @@
           {
             "frame": 0,
             "value": {
-              "__uuid__": "f6e2985f-81fa-4acc-b4a0-3fd8be13b685"
+              "__uuid__": "529ad726-7f21-4ec2-922b-a5c538ea8e24"
             }
           },
           {
             "frame": 0.16666666666666666,
             "value": {
-              "__uuid__": "af398b5a-0621-4f5b-973f-ce03bf4f7f83"
+              "__uuid__": "1751b9ce-2931-4937-983d-7ac3d75f4a17"
             }
           },
           {
             "frame": 0.3333333333333333,
             "value": {
-              "__uuid__": "af398b5a-0621-4f5b-973f-ce03bf4f7f83"
+              "__uuid__": "1751b9ce-2931-4937-983d-7ac3d75f4a17"
             }
           }
         ]

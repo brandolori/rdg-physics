@@ -1,0 +1,55 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "gabbiano",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.43333333333333335,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "9284b605-c36d-4df5-9c42-61d287d2b8c0"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "1e6d03ef-9f80-4787-99cb-96946d8775a0"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "b04a3d6b-b4a7-4c7d-909a-9af9802cf238"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "855ff3f5-f592-4cb8-8085-8e4bedc9528c"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "3c91078b-71ad-4c0b-945b-2532a3af72a8"
+            }
+          },
+          {
+            "frame": 0.4166666666666667,
+            "value": {
+              "__uuid__": "3c91078b-71ad-4c0b-945b-2532a3af72a8"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

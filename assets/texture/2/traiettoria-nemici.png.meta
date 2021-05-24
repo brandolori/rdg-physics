@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "6b81941e-bbd8-4d88-ada0-bdd663bcc4dc",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "point",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 200,
+  "height": 20,
+  "platformSettings": {},
+  "subMetas": {
+    "traiettoria-nemici": {
+      "ver": "1.0.4",
+      "uuid": "5f908851-d65c-4e45-acda-55f6e11ffee6",
+      "rawTextureUuid": "6b81941e-bbd8-4d88-ada0-bdd663bcc4dc",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1.5,
+      "offsetY": -1,
+      "trimX": 23,
+      "trimY": 6,
+      "width": 151,
+      "height": 10,
+      "rawWidth": 200,
+      "rawHeight": 20,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

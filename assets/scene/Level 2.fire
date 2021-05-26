@@ -15545,7 +15545,9 @@
     "event": "button-press",
     "muteMusic": false,
     "clips": [
-      null
+      {
+        "__uuid__": "cfee226a-8605-4fa0-ab44-74c58bb507fb"
+      }
     ]
   },
   {

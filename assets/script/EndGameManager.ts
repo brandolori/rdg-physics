@@ -41,10 +41,25 @@ export default class EndGameManager extends cc.Component {
         // this.inGameUI.active = false
         this.uiNode.active = true
         this.scoreLabel.string = LevelSpecific.instance.gameEndString.replace("{score}", score.toString())
-        this.shareButton.on(cc.Node.EventType.TOUCH_END, () => {
-            console.log(LevelSpecific.instance.shareEndString.replace("{score}", score.toString()))
-        })
+
+
+
         emitEvent(Events.UI_POPUP)
+
+        if (navigator.share) {
+            this.shareButton.on(cc.Node.EventType.TOUCH_END, () => {
+                const shareText = LevelSpecific.instance.shareEndString.replace("{score}", score.toString())
+
+                navigator.share({
+                    text: shareText,
+                    url: "/"
+                })
+                    .catch(err => console.log(err))
+                    .then(res => console.log(res))
+            })
+        } else {
+            this.shareButton.active = false
+        }
     }
 
     retry() {

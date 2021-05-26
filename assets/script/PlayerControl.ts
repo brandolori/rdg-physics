@@ -20,6 +20,9 @@ export default class PlayerControl extends cc.Component {
     @property(PlayerFeet)
     feet: PlayerFeet = null
 
+    @property
+    flip = false
+
     rigidBody: cc.RigidBody
     direction = 0
     isGrounded = false
@@ -135,7 +138,11 @@ export default class PlayerControl extends cc.Component {
             this.feet.isGrounded = false
         }
 
-        this.node.scaleX = this.direction >= 0 ? -1 : 1
+        this.node.scaleX = this.flip
+            ? this.direction >= 0
+                ? 1 : -1
+            : this.direction >= 0
+                ? -1 : 1
 
     }
 

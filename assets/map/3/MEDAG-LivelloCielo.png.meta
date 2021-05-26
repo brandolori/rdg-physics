@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "f693720d-9a77-4776-9ee6-b3efad83ca62",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 6400,
+  "height": 640,
+  "platformSettings": {},
+  "subMetas": {
+    "MEDAG-LivelloCielo": {
+      "ver": "1.0.4",
+      "uuid": "2af8f4db-de30-4a6d-a62b-9b2860ae262c",
+      "rawTextureUuid": "f693720d-9a77-4776-9ee6-b3efad83ca62",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 6400,
+      "height": 640,
+      "rawWidth": 6400,
+      "rawHeight": 640,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

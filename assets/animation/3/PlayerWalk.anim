@@ -1,6 +1,6 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "PlayerWalk3",
+  "_name": "PlayerWalk",
   "_objFlags": 0,
   "_native": "",
   "_duration": 0.016666666666666666,
@@ -14,7 +14,7 @@
           {
             "frame": 0,
             "value": {
-              "__uuid__": "a9ad05e3-5dc2-4858-81ce-339344df3b28"
+              "__uuid__": "cfc31da5-e0d8-4285-8546-b999c98e2a19"
             }
           }
         ]

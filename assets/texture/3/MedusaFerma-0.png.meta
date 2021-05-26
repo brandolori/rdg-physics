@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "828bba95-d49e-4b8f-b91e-1de7e847c017",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "point",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 32,
+  "height": 32,
+  "platformSettings": {},
+  "subMetas": {
+    "MedusaFerma-0": {
+      "ver": "1.0.4",
+      "uuid": "502019b8-5b19-41b6-8a15-0c9f48a4f413",
+      "rawTextureUuid": "828bba95-d49e-4b8f-b91e-1de7e847c017",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 32,
+      "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

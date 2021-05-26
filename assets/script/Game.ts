@@ -13,6 +13,9 @@ export default class Game extends cc.Component {
     @property
     gravity = -1000
 
+    @property(cc.Label)
+    scoreLabel: cc.Label = null
+
     score = 0
 
     state: "active" | "suspended" = "active"
@@ -42,7 +45,12 @@ export default class Game extends cc.Component {
         onEvent(Events.PAUSE, this.suspendGame, this)
         onEvent(Events.UNPAUSE, this.resumeGame, this)
 
-        onEvent(Events.COIN, () => this.score += 1)
+        onEvent(Events.COIN, this.onCoin, this)
+    }
+
+    onCoin() {
+        this.score += 1
+        this.scoreLabel.string = this.score.toString()
     }
 
     suspendGame() {

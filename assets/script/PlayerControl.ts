@@ -45,7 +45,6 @@ export default class PlayerControl extends cc.Component {
                     this.anim.play("PlayerWalk")
                     break;
             }
-            console.log(`switching to ${state}`)
             this.animState = state
         }
     }

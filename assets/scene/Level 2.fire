@@ -32,7 +32,7 @@
         "__id__": 470
       },
       {
-        "__id__": 475
+        "__id__": 476
       }
     ],
     "_active": false,
@@ -15501,6 +15501,9 @@
       },
       {
         "__id__": 474
+      },
+      {
+        "__id__": 475
       }
     ],
     "effectsVolume": 0.5,
@@ -15538,6 +15541,14 @@
     ]
   },
   {
+    "__type__": "EventClipSerializer",
+    "event": "button-press",
+    "muteMusic": false,
+    "clips": [
+      null
+    ]
+  },
+  {
     "__type__": "cc.Node",
     "_name": "BackgroundMusic",
     "_objFlags": 0,
@@ -15548,7 +15559,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 476
+        "__id__": 477
       }
     ],
     "_prefab": null,
@@ -15604,11 +15615,11 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 475
+      "__id__": 476
     },
     "_enabled": true,
     "clip": {
-      "__uuid__": "6d968e9e-f738-499b-88f0-7d51c6d7e538"
+      "__uuid__": "c54f2824-99b0-4314-8cd0-1b7c16bb19ae"
     },
     "_id": "b1JL9q9fVPYbZU9cgMGFSv"
   }

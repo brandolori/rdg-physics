@@ -24,7 +24,7 @@
       }
     ],
     "_prefab": {
-      "__id__": 6
+      "__id__": 7
     },
     "_opacity": 255,
     "_color": {
@@ -90,6 +90,9 @@
       },
       {
         "__id__": 5
+      },
+      {
+        "__id__": 6
       }
     ],
     "effectsVolume": 0.5,
@@ -123,6 +126,16 @@
     "clips": [
       {
         "__uuid__": "25d98db1-30c6-4c2f-b3f6-c6b0d4616a02"
+      }
+    ]
+  },
+  {
+    "__type__": "EventClipSerializer",
+    "event": "button-press",
+    "muteMusic": false,
+    "clips": [
+      {
+        "__uuid__": "cfee226a-8605-4fa0-ab44-74c58bb507fb"
       }
     ]
   },

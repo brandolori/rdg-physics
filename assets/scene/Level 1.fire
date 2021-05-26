@@ -2861,14 +2861,14 @@
     "_id": "64A9sRdehLG4d2W7IHIpMh"
   },
   {
-    "__type__": "5bdd7Vz6zBNK4O+4m0CdPJm",
+    "__type__": "a8870i6c0lBRqRUSgfkjDxd",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 65
     },
     "_enabled": true,
-    "_id": "64ho35B9JGnbTfWuEzXfDg"
+    "_id": "65mYHFJKRKEqxwAg27GeLx"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -19814,7 +19814,7 @@
     "feet": {
       "__id__": 601
     },
-    "flip": false,
+    "flip": true,
     "_id": "41ZVW9bxVNErdmpkKV8DsC"
   },
   {

@@ -7,7 +7,7 @@ export default class LoadSceneOnClick extends cc.Component {
     scene: cc.SceneAsset = null
 
     onLoad() {
-        this.node.on(cc.Node.EventType.TOUCH_START, this.onTouchStart, this)
+        this.node.on(cc.Node.EventType.TOUCH_END, this.onTouchStart, this)
     }
 
     onTouchStart() {

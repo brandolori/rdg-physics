@@ -32,7 +32,7 @@
         "__id__": 470
       },
       {
-        "__id__": 474
+        "__id__": 475
       }
     ],
     "_active": false,
@@ -15498,6 +15498,9 @@
       },
       {
         "__id__": 473
+      },
+      {
+        "__id__": 474
       }
     ],
     "effectsVolume": 0.5,
@@ -15525,6 +15528,16 @@
     ]
   },
   {
+    "__type__": "EventClipSerializer",
+    "event": "player-jump",
+    "muteMusic": false,
+    "clips": [
+      {
+        "__uuid__": "2ba6e331-0084-43d3-a124-b65986e0251e"
+      }
+    ]
+  },
+  {
     "__type__": "cc.Node",
     "_name": "BackgroundMusic",
     "_objFlags": 0,
@@ -15535,7 +15548,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 475
+        "__id__": 476
       }
     ],
     "_prefab": null,
@@ -15591,7 +15604,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 474
+      "__id__": 475
     },
     "_enabled": true,
     "clip": {

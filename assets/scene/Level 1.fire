@@ -27,6 +27,12 @@
       },
       {
         "__id__": 9
+      },
+      {
+        "__id__": 616
+      },
+      {
+        "__id__": 618
       }
     ],
     "_active": false,
@@ -20005,5 +20011,97 @@
     },
     "fileId": "",
     "sync": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 1
+    },
+    "_prefab": {
+      "__id__": 617
+    },
+    "_name": "AudioManager",
+    "_active": true,
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "08odqVv21Hcr5fiuTjRPOI"
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 616
+    },
+    "asset": {
+      "__uuid__": "d5e21943-d5b3-463b-8a37-9cf9866fddd5"
+    },
+    "fileId": "",
+    "sync": true
+  },
+  {
+    "__type__": "cc.Node",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 1
+    },
+    "_prefab": {
+      "__id__": 619
+    },
+    "_name": "BackgroundMusic",
+    "_active": true,
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "87FpRp545JZLsOXTTeOwQy"
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 618
+    },
+    "asset": {
+      "__uuid__": "6a91ed1d-f9ad-409e-badf-b5f905d7bd77"
+    },
+    "fileId": "",
+    "sync": true
   }
 ]

@@ -1,4 +1,4 @@
-import { Events, onEvent } from "./EventSystem";
+import { emitEvent, Events, onEvent } from "./EventSystem";
 import PlayerFeet from "./PlayerFeet";
 
 const { ccclass, property } = cc._decorator;
@@ -133,6 +133,7 @@ export default class PlayerControl extends cc.Component {
         }
 
         if (this.upPressed && this.feet.isGrounded) {
+            emitEvent(Events.PLAYER_JUMP)
             this.jump()
             this.feet.isGrounded = false
         }

@@ -86,7 +86,7 @@
   {
     "__type__": "cc.Node",
     "_name": "fire_1f525",
-    "_objFlags": 512,
+    "_objFlags": 0,
     "_parent": {
       "__id__": 1
     },

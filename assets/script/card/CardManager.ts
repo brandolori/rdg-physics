@@ -28,8 +28,8 @@ export default class CardManager extends cc.Component {
 
         inst.on(cc.Node.EventType.TOUCH_END, this.onTouchStart, this)
 
-        const maxIndexLabel = cc.find("Index Counter/Max Index", inst).getComponent(cc.Label)
-        maxIndexLabel.string = cards.length.toString()
+        // const maxIndexLabel = cc.find("Index Counter/Max Index", inst).getComponent(cc.Label)
+        // maxIndexLabel.string = cards.length.toString()
 
         this.updateCard()
         emitEvent(Events.CARD_OPEN)
@@ -40,14 +40,14 @@ export default class CardManager extends cc.Component {
     updateCard() {
         const nextCardInfo = this.stackOfCards[this.currentCardIndex]
         const titleLabel = this.cardNode.getChildByName("Title").getComponent(cc.Label)
-        const image = this.cardNode.getChildByName("Picture").getComponent(cc.Sprite)
+        // const image = this.cardNode.getChildByName("Picture").getComponent(cc.Sprite)
         const textLabel = this.cardNode.getChildByName("Text").getComponent(cc.Label)
-        const indexLabel = cc.find("Index Counter/Current Index", this.cardNode).getComponent(cc.Label)
+        // const indexLabel = cc.find("Index Counter/Current Index", this.cardNode).getComponent(cc.Label)
 
         titleLabel.string = nextCardInfo.title
-        image.spriteFrame = nextCardInfo.image
+        // image.spriteFrame = nextCardInfo.image
         textLabel.string = nextCardInfo.text
-        indexLabel.string = (this.currentCardIndex + 1).toString()
+        // indexLabel.string = (this.currentCardIndex + 1).toString()
     }
 
     onTouchStart(event: cc.Event.EventTouch) {

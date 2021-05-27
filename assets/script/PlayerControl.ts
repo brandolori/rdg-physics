@@ -1,4 +1,5 @@
 import { emitEvent, Events, onEvent } from "./EventSystem";
+import Game from "./Game";
 import PlayerFeet from "./PlayerFeet";
 
 const { ccclass, property } = cc._decorator;
@@ -114,6 +115,9 @@ export default class PlayerControl extends cc.Component {
     }
 
     update(dt) {
+
+        if (Game.instance.state != "active")
+            return
 
         this.direction = (+this.rightPressed) - (+this.leftPressed)
 

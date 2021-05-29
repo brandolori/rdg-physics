@@ -3317,7 +3317,8 @@
       "__id__": 2
     },
     "_enabled": true,
-    "gameEndString": "Fantastico! Hai raccolto {score} bulloni",
+    "gameOverString": "Oh no! Sei stato colpito. Hai raccolto {score} bulloni",
+    "gameWinString": "Complimenti, hai superato il livello! Hai raccolto {score} bulloni",
     "shareEndString": "Hey!😉 Ho raccolto {score} bulloni 🥳 giocando al gioco dell'Isola delle Rose. Se pensi di potermi battere, prova qui il gioco: {url} e condivi il risultato😎  ✨Videogame creato dai Future Maker riminesi con l' aiuto di NonStudio e Laboratorio Aperto Rimini Tiberio✨",
     "pendingSprites": [
       {
@@ -8317,7 +8318,7 @@
       "__id__": 202
     },
     "_enabled": true,
-    "event": "end-game",
+    "event": "end-reached",
     "once": false,
     "destroyOnCollision": false,
     "_id": "ae7NAEdfxBgounnV0lpfNA"
@@ -8431,7 +8432,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        157.362,
+        67.696,
         1259.874,
         0,
         0,

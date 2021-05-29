@@ -31,17 +31,18 @@ export default class EndGameManager extends cc.Component {
     mainMenuSceneName = "MainMenu"
 
     onLoad() {
-        onEvent(Events.DEATH, this.showDeathUI, this)
-        onEvent(Events.END_GAME, this.showDeathUI, this)
+        onEvent(Events.DEATH, (score: number) => this.showDeathUI(score, false))
+        onEvent(Events.END_GAME, (score: number) => this.showDeathUI(score, true))
         this.retryButton.on(cc.Node.EventType.TOUCH_END, this.retry, this)
         this.mainMenuButton.on(cc.Node.EventType.TOUCH_END, this.mainMenu, this)
     }
 
-    showDeathUI(score: number) {
+    showDeathUI(score: number, win: boolean) {
         // this.inGameUI.active = false
         this.uiNode.active = true
-        this.scoreLabel.string = LevelSpecific.instance.gameEndString.replace("{score}", score.toString())
-
+        this.scoreLabel.string = win
+            ? LevelSpecific.instance.gameWinString.replace("{score}", score.toString())
+            : LevelSpecific.instance.gameOverString.replace("{score}", score.toString())
 
 
         emitEvent(Events.UI_POPUP)

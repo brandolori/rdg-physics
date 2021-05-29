@@ -15,7 +15,10 @@ export default class LevelSpecific extends cc.Component {
     static instance: LevelSpecific
 
     @property
-    gameEndString = ""
+    gameOverString = ""
+
+    @property
+    gameWinString = ""
 
     @property
     shareEndString = ""

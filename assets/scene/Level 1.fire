@@ -3304,7 +3304,8 @@
       "__id__": 2
     },
     "_enabled": true,
-    "gameEndString": "Incredibile! Hai fatto {score} punti!",
+    "gameOverString": "Oh no! Sei stato colpito. Hai raccolto {score} piadine",
+    "gameWinString": "Complimenti! Hai superato il livello raccogliendo {score} piadine",
     "shareEndString": "Hey!😉 Ho raccolto {score} piadine a Rimini 🥳 giocando al gioco dell'Isola delle Rose. Se pensi di potermi battere, prova qui il gioco: {url} e condivi il risultato😎  ✨Videogame creato dai Future Maker riminesi con l' aiuto di NonStudio e Laboratorio Aperto Rimini Tiberio✨",
     "pendingSprites": [
       {
@@ -19766,7 +19767,7 @@
       "__id__": 605
     },
     "_enabled": true,
-    "event": "game-end",
+    "event": "end-reached",
     "once": false,
     "destroyOnCollision": false,
     "_id": "4c4PDC5mBBNJ1kKHa/4iRf"
@@ -19880,8 +19881,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        151.991,
-        1250.899,
+        442.39,
+        1258.862,
         0,
         0,
         0,

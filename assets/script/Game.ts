@@ -40,7 +40,10 @@ export default class Game extends cc.Component {
 
         onEvent(Events.PLAYER_HIT, this.die, this)
         onEvent(Events.DEATH_BARRIER, this.die, this)
-        onEvent(Events.END_GAME, () => this.suspendGame())
+        onEvent(Events.END_REACHED, () => {
+            emitEvent(Events.END_GAME, this.score)
+            this.suspendGame()
+        })
 
         onEvent(Events.PAUSE, this.suspendGame, this)
         onEvent(Events.UNPAUSE, this.resumeGame, this)

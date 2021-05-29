@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "e466c52a-ada7-4cc1-8aec-18922239e22b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 854,
+  "height": 287,
+  "platformSettings": {},
+  "subMetas": {
+    "logoHD (Piccola)": {
+      "ver": "1.0.4",
+      "uuid": "dffee3d4-925c-40a8-8fa1-8d60f012e455",
+      "rawTextureUuid": "e466c52a-ada7-4cc1-8aec-18922239e22b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 854,
+      "height": 287,
+      "rawWidth": 854,
+      "rawHeight": 287,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

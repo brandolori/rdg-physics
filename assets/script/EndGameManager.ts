@@ -33,8 +33,8 @@ export default class EndGameManager extends cc.Component {
     onLoad() {
         onEvent(Events.DEATH, this.showDeathUI, this)
         onEvent(Events.END_GAME, this.showDeathUI, this)
-        this.retryButton.on(cc.Node.EventType.TOUCH_START, this.retry, this)
-        this.mainMenuButton.on(cc.Node.EventType.TOUCH_START, this.mainMenu, this)
+        this.retryButton.on(cc.Node.EventType.TOUCH_END, this.retry, this)
+        this.mainMenuButton.on(cc.Node.EventType.TOUCH_END, this.mainMenu, this)
     }
 
     showDeathUI(score: number) {
@@ -48,11 +48,12 @@ export default class EndGameManager extends cc.Component {
 
         if (navigator.share) {
             this.shareButton.on(cc.Node.EventType.TOUCH_END, () => {
-                const shareText = LevelSpecific.instance.shareEndString.replace("{score}", score.toString())
+                const shareText = LevelSpecific.instance.shareEndString
+                    .replace("{score}", score.toString())
+                    .replace("{url}", "rgd.nonstudio.org")
 
                 navigator.share({
                     text: shareText,
-                    url: "/"
                 })
                     .catch(err => console.log(err))
                     .then(res => console.log(res))

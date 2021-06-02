@@ -1,6 +1,6 @@
 {
   "ver": "2.3.5",
-  "uuid": "9dea3239-0f2f-4670-a8e0-bc7ad42c848f",
+  "uuid": "0e1956a3-76aa-4860-a3ac-88cefdb7dfd3",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "point",
@@ -11,10 +11,10 @@
   "height": 32,
   "platformSettings": {},
   "subMetas": {
-    "SqualoFermo-0": {
+    "squalofermo1": {
       "ver": "1.0.4",
-      "uuid": "f3027dd2-9950-464b-b2d7-712cf8588981",
-      "rawTextureUuid": "9dea3239-0f2f-4670-a8e0-bc7ad42c848f",
+      "uuid": "a0508e09-36d8-4ba1-847b-51d888311d78",
+      "rawTextureUuid": "0e1956a3-76aa-4860-a3ac-88cefdb7dfd3",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

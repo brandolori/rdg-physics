@@ -728,7 +728,7 @@
       "__id__": 10
     },
     "_enabled": true,
-    "scene": "Level 1",
+    "scene": "Level GRU",
     "_id": "04c2aOUGRDxJYZyYuF+By0"
   },
   {
@@ -1077,7 +1077,7 @@
       "__id__": 20
     },
     "_enabled": true,
-    "scene": "Level 2",
+    "scene": "Level MEDAG",
     "_id": "0fVGl4N9BJ27vXq56mf5yJ"
   },
   {
@@ -1426,7 +1426,7 @@
       "__id__": 30
     },
     "_enabled": true,
-    "scene": "Level 3",
+    "scene": "Level Sabaku",
     "_id": "f1jW2QxM5GbqBpVYKXdNts"
   },
   {

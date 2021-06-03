@@ -29,10 +29,10 @@
         "__id__": 8
       },
       {
-        "__id__": 626
+        "__id__": 625
       },
       {
-        "__id__": 628
+        "__id__": 627
       }
     ],
     "_active": false,
@@ -20226,9 +20226,7 @@
         "__id__": 624
       }
     ],
-    "_prefab": {
-      "__id__": 625
-    },
+    "_prefab": null,
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -20294,7 +20292,7 @@
       "a": 255
     },
     "_depth": 0,
-    "_zoomRatio": 1,
+    "_zoomRatio": 0.7,
     "_targetTexture": null,
     "_fov": 60,
     "_orthoSize": 10,
@@ -20331,24 +20329,13 @@
     "_id": "a6ivzu6yZBk7bKzimKL3r4"
   },
   {
-    "__type__": "cc.PrefabInfo",
-    "root": {
-      "__id__": 622
-    },
-    "asset": {
-      "__uuid__": "5aba6ff4-053c-46a7-8bc7-391ebea5d00b"
-    },
-    "fileId": "",
-    "sync": false
-  },
-  {
     "__type__": "cc.Node",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
     },
     "_prefab": {
-      "__id__": 627
+      "__id__": 626
     },
     "_name": "AudioManager",
     "_active": true,
@@ -20379,7 +20366,7 @@
   {
     "__type__": "cc.PrefabInfo",
     "root": {
-      "__id__": 626
+      "__id__": 625
     },
     "asset": {
       "__uuid__": "d5e21943-d5b3-463b-8a37-9cf9866fddd5"
@@ -20394,7 +20381,7 @@
       "__id__": 1
     },
     "_prefab": {
-      "__id__": 629
+      "__id__": 628
     },
     "_name": "BackgroundMusic",
     "_active": true,
@@ -20425,7 +20412,7 @@
   {
     "__type__": "cc.PrefabInfo",
     "root": {
-      "__id__": 628
+      "__id__": 627
     },
     "asset": {
       "__uuid__": "6a91ed1d-f9ad-409e-badf-b5f905d7bd77"

@@ -94,7 +94,7 @@
       "a": 255
     },
     "_depth": 0,
-    "_zoomRatio": 1,
+    "_zoomRatio": 0.7,
     "_targetTexture": null,
     "_fov": 60,
     "_orthoSize": 10,
@@ -120,6 +120,9 @@
       "__id__": 1
     },
     "_enabled": true,
+    "bgArray": [
+      null
+    ],
     "lerpFactor": 20,
     "minHeight": -200,
     "maxHeight": 1800,

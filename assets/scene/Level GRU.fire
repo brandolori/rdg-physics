@@ -29,10 +29,10 @@
         "__id__": 8
       },
       {
-        "__id__": 225
+        "__id__": 224
       },
       {
-        "__id__": 235
+        "__id__": 234
       }
     ],
     "_active": false,
@@ -8803,9 +8803,7 @@
         "__id__": 223
       }
     ],
-    "_prefab": {
-      "__id__": 224
-    },
+    "_prefab": null,
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -8871,7 +8869,7 @@
       "a": 255
     },
     "_depth": 0,
-    "_zoomRatio": 1,
+    "_zoomRatio": 0.7,
     "_targetTexture": null,
     "_fov": 60,
     "_orthoSize": 10,
@@ -8914,17 +8912,6 @@
     "_id": "56t+RywgJApYIK6WWmOxW8"
   },
   {
-    "__type__": "cc.PrefabInfo",
-    "root": {
-      "__id__": 221
-    },
-    "asset": {
-      "__uuid__": "5aba6ff4-053c-46a7-8bc7-391ebea5d00b"
-    },
-    "fileId": "",
-    "sync": false
-  },
-  {
     "__type__": "cc.Node",
     "_name": "AudioManager",
     "_objFlags": 0,
@@ -8935,7 +8922,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 226
+        "__id__": 225
       }
     ],
     "_prefab": null,
@@ -8991,10 +8978,13 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 225
+      "__id__": 224
     },
     "_enabled": true,
     "eventClips": [
+      {
+        "__id__": 226
+      },
       {
         "__id__": 227
       },
@@ -9015,9 +9005,6 @@
       },
       {
         "__id__": 233
-      },
-      {
-        "__id__": 234
       }
     ],
     "effectsVolume": 0.5,
@@ -9115,7 +9102,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 236
+        "__id__": 235
       }
     ],
     "_prefab": null,
@@ -9171,7 +9158,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 235
+      "__id__": 234
     },
     "_enabled": true,
     "clip": {

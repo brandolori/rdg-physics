@@ -51,6 +51,10 @@ export default class Game extends cc.Component {
         onEvent(Events.COIN, this.onCoin, this)
     }
 
+    start() {
+        emitEvent(Events.GAME_START)
+    }
+
     onCoin() {
         this.score += 1
         this.scoreLabel.string = this.score.toString()

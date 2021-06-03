@@ -32,7 +32,7 @@
         "__id__": 225
       },
       {
-        "__id__": 231
+        "__id__": 235
       }
     ],
     "_active": false,
@@ -9006,6 +9006,18 @@
       },
       {
         "__id__": 230
+      },
+      {
+        "__id__": 231
+      },
+      {
+        "__id__": 232
+      },
+      {
+        "__id__": 233
+      },
+      {
+        "__id__": 234
       }
     ],
     "effectsVolume": 0.5,
@@ -9053,6 +9065,46 @@
     ]
   },
   {
+    "__type__": "EventClipSerializer",
+    "event": "game-start",
+    "muteMusic": true,
+    "clips": [
+      {
+        "__uuid__": "5010155b-ada8-44d3-adab-d0157e69ad02"
+      }
+    ]
+  },
+  {
+    "__type__": "EventClipSerializer",
+    "event": "end-reached",
+    "muteMusic": true,
+    "clips": [
+      {
+        "__uuid__": "1c700da5-a10b-4173-8ab4-64f31676b4cc"
+      }
+    ]
+  },
+  {
+    "__type__": "EventClipSerializer",
+    "event": "player-hit",
+    "muteMusic": true,
+    "clips": [
+      {
+        "__uuid__": "2e9371e5-4f84-4f9b-90bd-e7974b11d200"
+      }
+    ]
+  },
+  {
+    "__type__": "EventClipSerializer",
+    "event": "death-barrier",
+    "muteMusic": true,
+    "clips": [
+      {
+        "__uuid__": "2e9371e5-4f84-4f9b-90bd-e7974b11d200"
+      }
+    ]
+  },
+  {
     "__type__": "cc.Node",
     "_name": "BackgroundMusic",
     "_objFlags": 0,
@@ -9063,7 +9115,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 232
+        "__id__": 236
       }
     ],
     "_prefab": null,
@@ -9119,7 +9171,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 231
+      "__id__": 235
     },
     "_enabled": true,
     "clip": {

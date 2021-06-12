@@ -17,6 +17,11 @@ export default class TouchInput extends cc.Component {
     player: PlayerControl
 
     onLoad() {
+        if (!("ontouchstart" in window)) {
+            this.node.active = false
+            return
+        }
+
         this.player = cc.director.getScene().getComponentInChildren(PlayerControl)
 
         // start

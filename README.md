@@ -1,7 +1,5 @@
 # Rimini Game Design Platformer Game
 
-**WORK IN PROGRESS**
-
 Progetto per Cocos Creator 2.4.5
 
 Per aprire:
